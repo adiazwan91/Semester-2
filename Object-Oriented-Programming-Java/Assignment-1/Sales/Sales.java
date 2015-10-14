@@ -1,44 +1,44 @@
 package Sales;
 import java.util.Arrays;
 
-public class Sales 
+public class Sales //Sales class
 {
     private String salesId;
     private double amount;
     
-    public Sales()
+    public Sales() //Default constructor
     {
         salesId = null;
         amount = 0.0;
     }
     
-    public Sales(String salesId, double amount)
+    public Sales(String salesId, double amount) //2 Arguments constructor
     {
         this.salesId = salesId;
         this.amount = amount;
     }
     
-    public String getSalesId()
+    public String getSalesId() //Accessor method 
     {
         return salesId;
     }
     
-    public void setSalesId(String salesId)
+    public void setSalesId(String salesId) //Mutator method
     {
         this.salesId = salesId;
     }
     
-    public double getAmount()
+    public double getAmount() //Accessor method 
     {
         return amount;
     }
     
-    public void setAmount(double amount)
+    public void setAmount(double amount) //Mutator method
     {
         this.amount = amount;
     }
     
-    public double determineDiscount()
+    public double determineDiscount(double amount) //Method to calculate discount
     {
         double discount = 0;
         
@@ -56,19 +56,20 @@ public class Sales
         {
             discount = amount * 0.04;
         }
-       return discount;
+        
+        return discount;
     }
     
-    public void displaySalesObject(String salesId, double amount)
+    public void displaySalesObject(String salesId, double amount) //Method to display sales id and amount
     {
-       System.out.println("Sale id"+ salesId);
-       System.out.println("Amount"+ amount+"\n");
+       System.out.println("The sales ID is: "+ salesId);
+       System.out.println("The amount of sales is: RM"+ amount);
        
     }
     
-    public void displaySalesArray(String[] idArray, double[] amountArray)
+    public void displaySalesArray() //Method to display sales id and amount in array
     {
-        System.out.println("Sale id"+(Arrays.toString(idArray)));
-        System.out.println("Amount"+(Arrays.toString(amountArray)));
+        System.out.println("\n"+"The sales ID is: "+ salesId);
+        System.out.println("The amount of sales is: RM"+ amount+"\n");
     }
 }
