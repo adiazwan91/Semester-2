@@ -33,9 +33,9 @@ public class Test //Test class
             salesArray[i].setAmount(amount); //Set amount value to setAmount method
         }
         
-        for (Sales salesArray1 : salesArray) //Loop for array output
+        for (int i = 0; i < salesArray.length; i++) //Loop for array output
         {
-            salesArray1.displaySalesArray(); //Call displaySalesArray method to output
+            salesArray[i].displaySalesArray(); //Call displaySalesArray method to output
         }
     }
 }
