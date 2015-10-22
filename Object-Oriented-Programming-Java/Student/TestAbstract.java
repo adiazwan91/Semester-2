@@ -13,6 +13,7 @@ public class TestAbstract
         
         System.out.println(ps);
         System.out.println("The fees is: " +ps.calculateFees());
+        System.out.println("The research allowance is: "+ps.doResearchAllowance());
        
     }
 }
